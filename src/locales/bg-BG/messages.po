@@ -15,7 +15,7 @@ msgstr ""
 "X-Crowdin-Project: replaceme-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: bg\n"
-"X-Crowdin-File: /[replaceme-Network.replaceme-blockchain-gui] main/src/locales/en-US/messages.po\n"
+"X-Crowdin-File: /[Replaceme-Network.replaceme-blockchain-gui] main/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 118\n"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:78

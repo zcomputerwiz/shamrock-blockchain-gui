@@ -38,7 +38,7 @@ export default function PlotOverviewHero() {
               }
               <Link
                 target="_blank"
-                href="https://github.com/replaceme-Network/replaceme-blockchain/wiki/Network-Architecture"
+                href="https://github.com/Replaceme-Network/replaceme-blockchain/wiki/Network-Architecture"
               >
                 Learn more
               </Link>

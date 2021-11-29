@@ -15,15 +15,15 @@ function getInstallerConfig () {
 
   return Promise.resolve({
     appDirectory: path.join(rootPath, 'replaceme-win32-x64'),
-    authors: 'replaceme Network',
-    version: process.env.replaceme_INSTALLER_VERSION,
+    authors: 'Replaceme Network',
+    version: process.env.REPLACEME_INSTALLER_VERSION,
     noMsi: true,
-    iconUrl: 'https://raw.githubusercontent.com/replaceme-Network/replaceme-blockchain/master/electron-react/src/assets/img/replaceme.ico',
+    iconUrl: 'https://raw.githubusercontent.com/Replaceme-Network/replaceme-blockchain/master/electron-react/src/assets/img/replaceme.ico',
     outputDirectory: path.join(outPath, 'windows-installer'),
     certificateFile: 'win_code_sign_cert.p12',
     certificatePassword: process.env.WIN_CODE_SIGN_PASS,
     exe: 'replaceme.exe',
-    setupExe: 'replacemeSetup-' + process.env.replaceme_INSTALLER_VERSION + '.exe',
+    setupExe: 'ReplacemeSetup-' + process.env.REPLACEME_INSTALLER_VERSION + '.exe',
     setupIcon: path.join(rootPath, 'src', 'assets', 'img', 'replaceme.ico')
   })
 }

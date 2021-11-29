@@ -15,7 +15,7 @@ msgstr ""
 "X-Crowdin-Project: replaceme-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: de\n"
-"X-Crowdin-File: /[replaceme-Network.replaceme-blockchain-gui] main/src/locales/en-US/messages.po\n"
+"X-Crowdin-File: /[Replaceme-Network.replaceme-blockchain-gui] main/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 118\n"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:78
@@ -60,8 +60,8 @@ msgstr ""
 
 #: src/electron/main.tsx:431
 #: src/electron/main.tsx:518
-msgid "About replaceme Blockchain"
-msgstr "Mehr über die replaceme Blockchain"
+msgid "About Replaceme Blockchain"
+msgstr "Mehr über die Replaceme Blockchain"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -251,7 +251,7 @@ msgstr "Block VDF Iterationen"
 
 #: src/components/block/Block.jsx:337
 msgid "Block at height {0} in the replaceme blockchain"
-msgstr "Block der Höhe {0} in der replaceme Blockchain"
+msgstr "Block der Höhe {0} in der Replaceme Blockchain"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -359,8 +359,8 @@ msgid "replaceme"
 msgstr "replaceme"
 
 #: src/electron/main.tsx:367
-msgid "replaceme Blockchain Wiki"
-msgstr "replaceme Blockchain Wiki"
+msgid "Replaceme Blockchain Wiki"
+msgstr "Replaceme Blockchain Wiki"
 
 #: src/components/wallet/standard/WalletStandard.tsx:642
 msgid "replaceme Wallet"

@@ -15,7 +15,7 @@ msgstr ""
 "X-Crowdin-Project: replaceme-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: el\n"
-"X-Crowdin-File: /[replaceme-Network.replaceme-blockchain-gui] main/src/locales/en-US/messages.po\n"
+"X-Crowdin-File: /[Replaceme-Network.replaceme-blockchain-gui] main/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 118\n"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:78
@@ -60,8 +60,8 @@ msgstr ""
 
 #: src/electron/main.tsx:431
 #: src/electron/main.tsx:518
-msgid "About replaceme Blockchain"
-msgstr "Περί replaceme Blockchain"
+msgid "About Replaceme Blockchain"
+msgstr "Περί Replaceme Blockchain"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -359,8 +359,8 @@ msgid "replaceme"
 msgstr "replaceme"
 
 #: src/electron/main.tsx:367
-msgid "replaceme Blockchain Wiki"
-msgstr "replaceme Blockchain Wiki"
+msgid "Replaceme Blockchain Wiki"
+msgstr "Replaceme Blockchain Wiki"
 
 #: src/components/wallet/standard/WalletStandard.tsx:642
 msgid "replaceme Wallet"

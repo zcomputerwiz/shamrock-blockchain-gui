@@ -364,10 +364,10 @@ if (!handleSquirrelEvent()) {
         role: 'help',
         submenu: [
           {
-            label: i18n._(/* i18n */ { id: 'replaceme Blockchain Wiki' }),
+            label: i18n._(/* i18n */ { id: 'Replaceme Blockchain Wiki' }),
             click: () => {
               openExternal(
-                'https://github.com/replaceme-Network/replaceme-blockchain/wiki',
+                'https://github.com/Replaceme-Network/replaceme-blockchain/wiki',
               );
             },
           },
@@ -375,7 +375,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Frequently Asked Questions' }),
             click: () => {
               openExternal(
-                'https://github.com/replaceme-Network/replaceme-blockchain/wiki/FAQ',
+                'https://github.com/Replaceme-Network/replaceme-blockchain/wiki/FAQ',
               );
             },
           },
@@ -383,7 +383,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Release Notes' }),
             click: () => {
               openExternal(
-                'https://github.com/replaceme-Network/replaceme-blockchain/releases',
+                'https://github.com/Replaceme-Network/replaceme-blockchain/releases',
               );
             },
           },
@@ -391,7 +391,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Contribute on GitHub' }),
             click: () => {
               openExternal(
-                'https://github.com/replaceme-Network/replaceme-blockchain/blob/master/CONTRIBUTING.md',
+                'https://github.com/Replaceme-Network/replaceme-blockchain/blob/master/CONTRIBUTING.md',
               );
             },
           },
@@ -402,7 +402,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Report an Issue...' }),
             click: () => {
               openExternal(
-                'https://github.com/replaceme-Network/replaceme-blockchain/issues',
+                'https://github.com/Replaceme-Network/replaceme-blockchain/issues',
               );
             },
           },
@@ -423,12 +423,12 @@ if (!handleSquirrelEvent()) {
     ];
 
     if (process.platform === 'darwin') {
-      // replaceme Blockchain menu (Mac)
+      // Replaceme Blockchain menu (Mac)
       template.unshift({
         label: i18n._(/* i18n */ { id: 'replaceme' }),
         submenu: [
           {
-            label: i18n._(/* i18n */ { id: 'About replaceme Blockchain' }),
+            label: i18n._(/* i18n */ { id: 'About Replaceme Blockchain' }),
             click: () => {
               openAbout();
             },
@@ -515,7 +515,7 @@ if (!handleSquirrelEvent()) {
           type: 'separator',
         },
         {
-          label: i18n._(/* i18n */ { id: 'About replaceme Blockchain' }),
+          label: i18n._(/* i18n */ { id: 'About Replaceme Blockchain' }),
           click() {
             openAbout();
           },

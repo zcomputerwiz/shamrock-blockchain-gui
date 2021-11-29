@@ -36,8 +36,8 @@ msgstr "'n Stroper (Harvester) is 'n robot wat werk op dieselfde masjien wat lan
 
 #: src/electron/main.tsx:365
 #: src/electron/main.tsx:443
-msgid "About replaceme Blockchain"
-msgstr "Inligting oor replaceme Blockchain"
+msgid "About Replaceme Blockchain"
+msgstr "Inligting oor Replaceme Blockchain"
 
 #: src/components/trading/ViewOffer.jsx:85
 msgid "Accept"
@@ -272,8 +272,8 @@ msgid "replaceme"
 msgstr "replaceme"
 
 #: src/electron/main.tsx:312
-msgid "replaceme Blockchain Wiki"
-msgstr "replaceme Blockchain Wiki"
+msgid "Replaceme Blockchain Wiki"
+msgstr "Replaceme Blockchain Wiki"
 
 #: src/components/wallet/Wallets.tsx:32
 msgid "replaceme Wallet"

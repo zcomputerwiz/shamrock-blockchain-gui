@@ -15,7 +15,7 @@ msgstr ""
 "X-Crowdin-Project: replaceme-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: vi\n"
-"X-Crowdin-File: /[replaceme-Network.replaceme-blockchain-gui] main/src/locales/en-US/messages.po\n"
+"X-Crowdin-File: /[Replaceme-Network.replaceme-blockchain-gui] main/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 118\n"
 
 #: src/components/plot/add/PlotAddNFT.tsx:62
@@ -24,7 +24,7 @@ msgstr ""
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
 msgid "*Want to explore replaceme’s blocks further? Check out <0>replaceme Explorer</0> built by an open source developer."
-msgstr "* Bạn muốn khám phá thêm về replaceme Blockchain? Xem <0> replaceme Explorer </0> được xây dựng bởi các nhà phát triển nguồn mở."
+msgstr "* Bạn muốn khám phá thêm về Replaceme Blockchain? Xem <0> replaceme Explorer </0> được xây dựng bởi các nhà phát triển nguồn mở."
 
 #: src/components/plot/add/PlotAddNFT.tsx:123
 msgid "+ Add New Plot NFT"
@@ -48,8 +48,8 @@ msgstr "Harvester là một dịch vụ chạy trên một máy chứa các tệ
 
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
-msgid "About replaceme Blockchain"
-msgstr "Về replaceme Blockchain"
+msgid "About Replaceme Blockchain"
+msgstr "Về Replaceme Blockchain"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -329,8 +329,8 @@ msgid "replaceme"
 msgstr "replaceme"
 
 #: src/electron/main.tsx:358
-msgid "replaceme Blockchain Wiki"
-msgstr "replaceme Blockchain Wiki"
+msgid "Replaceme Blockchain Wiki"
+msgstr "Replaceme Blockchain Wiki"
 
 #: src/components/wallet/standard/WalletStandard.tsx:649
 msgid "replaceme Wallet"
