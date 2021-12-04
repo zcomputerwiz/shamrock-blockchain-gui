@@ -70,7 +70,7 @@ const Spacer = styled.div`
   margin-bottom: 1rem;
 `;
 
-const url = 'https://shamrock.net';
+const url = 'https://shamrock.network';
 
 type Props = {
   version: string;

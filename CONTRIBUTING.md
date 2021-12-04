@@ -9,7 +9,7 @@ This repo includes the code for the shamrock GUI in electron/react and TypeScrip
 It is an input to the [shamrock-blockchain](https://github.com/Shamrock-Network/shamrock-blockchain) repository which also includes a verifiable delay function implementation that it imports from the [shamrockvdf repo](https://github.com/Shamrock-Network/shamrockvdf) (in c/c++), and a proof of space implementation that it imports from the [shamrockpos repo](https://github.com/Shamrock-Network/shamrockpos). BLS signatures are imported from the [bls-signatures repo](https://github.com/Shamrock-Network/bls-signatures) as blspy. There is an additional dependency on the [shamrockbip158 repo](https://github.com/Shamrock-Network/shamrockbip158).
 For major platforms, binary and source wheels are shipped to PyPI from each dependent repo and then shamrock-blockchain can pip install those from PyPI or they can be prepackaged as is done for the Windows and MacOS installer. On unsupported platforms, pip will fall back to the source distributions to be compiled locally.
 
-If you want to learn more about this project, read the [wiki](https://github.com/Shamrock-Network/shamrock-blockchain/wiki), or check out the [green paper](https://www.shamrock.net/assets/shamrockGreenPaper.pdf).
+If you want to learn more about this project, read the [wiki](https://github.com/Shamrock-Network/shamrock-blockchain/wiki), or check out the [green paper](https://www.shamrock.network/assets/shamrockGreenPaper.pdf).
 
 ## Contributions
 

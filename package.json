@@ -1,6 +1,6 @@
 {
     "name": "shamrock-blockchain",
-    "author": "Shamrock Network <hello@shamrock.net> (https://shamrock.net/)",
+    "author": "Shamrock Network <hello@shamrock.network> (https://shamrock.network/)",
     "description": "GUI for Shamrock Blockchain",
     "productName": "Shamrock Blockchain",
     "private": true,

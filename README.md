@@ -1,5 +1,5 @@
 # shamrock-blockchain
-![Alt text](https://www.shamrock.net/img/shamrock_logo.svg)
+![Alt text](https://www.shamrock.network/img/shamrock_logo.svg)
 
 ![GitHub contributors](https://img.shields.io/github/contributors/Shamrock-Network/shamrock-blockchain?logo=GitHub)
 
