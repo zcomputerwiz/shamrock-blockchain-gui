@@ -128,7 +128,7 @@ msgstr "Tilføj plot folder"
 
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:42
 msgid "Add {currencyCode} from the Faucet"
-msgstr "Tilføj {currencyCode} fra Mojohanen"
+msgstr "Tilføj {currencyCode} fra cloverhanen"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:561
 #: src/components/wallet/coloured/WalletColoured.tsx:657
@@ -3092,8 +3092,8 @@ msgid "{currencyCode} User Transaction Fees"
 msgstr "{currencyCode} Bruger Transaktionsgebyrer"
 
 #: src/components/core/components/Amount/Amount.tsx:82
-msgid "{mojo, plural, one {mojo} other {mojos}}"
-msgstr "{mojo, plural, one {mojo} other {mojos}}"
+msgid "{clover, plural, one {clover} other {clovers}}"
+msgstr "{clover, plural, one {clover} other {clovers}}"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:122
 msgid "{warning}"

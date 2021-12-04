@@ -3,7 +3,7 @@ import { Trans } from '@lingui/macro';
 import { useSelector } from 'react-redux';
 import type { RootState } from '../../../modules/rootReducer';
 import FarmCard from './FarmCard';
-import { mojo_to_shamrock } from '../../../util/shamrock';
+import { clover_to_shamrock } from '../../../util/shamrock';
 import useCurrencyCode from '../../../hooks/useCurrencyCode';
 
 export default function FarmCardTotalShamrockFarmed() {
@@ -20,7 +20,7 @@ export default function FarmCardTotalShamrockFarmed() {
   const totalShamrockFarmed = useMemo(() => {
     if (farmedAmount !== undefined) {
       const val = BigInt(farmedAmount.toString());
-      return mojo_to_shamrock(val);
+      return clover_to_shamrock(val);
     }
   }, [farmedAmount]);
 

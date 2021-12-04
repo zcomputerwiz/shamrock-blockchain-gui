@@ -3092,7 +3092,7 @@ msgid "{currencyCode} User Transaction Fees"
 msgstr "{currencyCode} Gebruikers Transactie Vergoeding"
 
 #: src/components/core/components/Amount/Amount.tsx:82
-msgid "{mojo, plural, one {mojo} other {mojos}}"
+msgid "{clover, plural, one {clover} other {clovers}}"
 msgstr ""
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:122

@@ -21,8 +21,8 @@ import {
   rename_cc_wallet,
 } from '../../../modules/message';
 import {
-  mojo_to_colouredcoin_string,
-  colouredcoin_to_mojo,
+  clover_to_colouredcoin_string,
+  colouredcoin_to_clover,
 } from '../../../util/shamrock';
 import { openDialog } from '../../../modules/dialog';
 import { get_transaction_result } from '../../../util/transaction_result';
@@ -290,7 +290,7 @@ function BalanceCardSubSection(props: BalanceCardSubSectionProps) {
         </Box>
         <Box>
           <Typography variant="subtitle1">
-            {mojo_to_colouredcoin_string(props.balance)} {cc_unit}
+            {clover_to_colouredcoin_string(props.balance)} {cc_unit}
           </Typography>
         </Box>
       </Box>
@@ -346,9 +346,9 @@ function BalanceCard(props: BalanceCardProps) {
   const balancebox_unit = ` ${cc_unit}`;
   const balancebox_hline =
     "<tr><td colspan='2' style='text-align:center'><hr width='50%'></td></tr>";
-  const balance_ptotal_shamrock = mojo_to_colouredcoin_string(balance_ptotal);
-  const balance_pending_shamrock = mojo_to_colouredcoin_string(balance_pending);
-  const balance_change_shamrock = mojo_to_colouredcoin_string(balance_change);
+  const balance_ptotal_shamrock = clover_to_colouredcoin_string(balance_ptotal);
+  const balance_pending_shamrock = clover_to_colouredcoin_string(balance_pending);
+  const balance_change_shamrock = clover_to_colouredcoin_string(balance_change);
   const acc_content =
     balancebox_1 +
     balancebox_2 +
@@ -486,8 +486,8 @@ function SendCard(props: SendCardProps) {
       return;
     }
 
-    const amount = colouredcoin_to_mojo(amount_input.value);
-    const fee = colouredcoin_to_mojo(fee_input.value);
+    const amount = colouredcoin_to_clover(amount_input.value);
+    const fee = colouredcoin_to_clover(fee_input.value);
 
     if (address.includes('shamrock_addr') || address.includes('colour_desc')) {
       dispatch(

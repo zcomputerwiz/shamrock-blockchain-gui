@@ -83,32 +83,32 @@ shamrock_formatter.setFiat = (currency, rate, display = null) => {
   units.setUnit(currency, 1 / rate, display);
 };
 
-export const mojo_to_shamrock = (mojo) => {
-  return shamrock_formatter(Number.parseInt(mojo), 'mojo').to('shamrock').value();
+export const clover_to_shamrock = (clover) => {
+  return shamrock_formatter(Number.parseInt(clover), 'clover').to('shamrock').value();
 };
 
-export const shamrock_to_mojo = (shamrock) => {
+export const shamrock_to_clover = (shamrock) => {
   return shamrock_formatter(Number.parseFloat(Number(shamrock)), 'shamrock')
-    .to('mojo')
+    .to('clover')
     .value();
 };
 
-export const mojo_to_shamrock_string = (mojo) => {
-  return shamrock_formatter(Number(mojo), 'mojo').to('shamrock').toString();
+export const clover_to_shamrock_string = (clover) => {
+  return shamrock_formatter(Number(clover), 'clover').to('shamrock').toString();
 };
 
-export const mojo_to_colouredcoin = (mojo) => {
-  return shamrock_formatter(Number.parseInt(mojo), 'mojo')
+export const clover_to_colouredcoin = (clover) => {
+  return shamrock_formatter(Number.parseInt(clover), 'clover')
     .to('colouredcoin')
     .value();
 };
 
-export const colouredcoin_to_mojo = (colouredcoin) => {
+export const colouredcoin_to_clover = (colouredcoin) => {
   return shamrock_formatter(Number.parseFloat(Number(colouredcoin)), 'colouredcoin')
-    .to('mojo')
+    .to('clover')
     .value();
 };
 
-export const mojo_to_colouredcoin_string = (mojo) => {
-  return shamrock_formatter(Number(mojo), 'mojo').to('colouredcoin').toString();
+export const clover_to_colouredcoin_string = (clover) => {
+  return shamrock_formatter(Number(clover), 'clover').to('colouredcoin').toString();
 };

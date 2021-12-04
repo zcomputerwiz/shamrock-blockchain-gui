@@ -1,6 +1,6 @@
 enum Unit {
   shamrock = 'shamrock',
-  MOJO = 'MOJO',
+  clover = 'clover',
   COLOURED_COIN = 'COLOUREDCOIN',
 }
 

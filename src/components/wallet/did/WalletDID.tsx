@@ -29,7 +29,7 @@ import {
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Tooltip } from '@material-ui/core';
 import HelpIcon from '@material-ui/icons/Help';
-import { mojo_to_shamrock_string } from '../../../util/shamrock';
+import { clover_to_shamrock_string } from '../../../util/shamrock';
 import { useForm, Controller, useFieldArray } from 'react-hook-form';
 import { openDialog } from '../../../modules/dialog';
 import useCurrencyCode from '../../../hooks/useCurrencyCode';
@@ -613,7 +613,7 @@ const BalanceCardSubSection = (props) => {
         </Box>
         <Box>
           <Typography variant="subtitle1">
-            {mojo_to_shamrock_string(props.balance)} TSRN
+            {clover_to_shamrock_string(props.balance)} TSRN
           </Typography>
         </Box>
       </Box>

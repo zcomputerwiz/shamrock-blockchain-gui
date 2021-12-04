@@ -20,7 +20,7 @@ import {
 } from '../../../modules/createWallet';
 import { useStyles } from './WalletCreate';
 import { create_cc_action } from '../../../modules/message';
-import { shamrock_to_mojo } from '../../../util/shamrock';
+import { shamrock_to_clover } from '../../../util/shamrock';
 import { openDialog } from '../../../modules/dialog';
 
 export const customStyles = makeStyles((theme) => ({
@@ -83,8 +83,8 @@ export const CreateNewCCWallet = () => {
       return;
     }
     dispatch(createState(true, true));
-    const amount = shamrock_to_mojo(amount_input.value);
-    const fee = shamrock_to_mojo(fee_input.value);
+    const amount = shamrock_to_clover(amount_input.value);
+    const fee = shamrock_to_clover(fee_input.value);
     dispatch(create_cc_action(amount, fee));
   }
 

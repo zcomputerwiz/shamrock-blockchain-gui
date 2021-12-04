@@ -31,7 +31,7 @@ import PlotNFTStateEnum from '../../constants/PlotNFTState';
 import PlotNFTUnconfirmedCard from '../plotNFT/PlotNFTUnconfirmedCard';
 import PlotNFTState from '../plotNFT/PlotNFTState';
 import useUnconfirmedPlotNFTs from '../../hooks/useUnconfirmedPlotNFTs';
-import { mojo_to_shamrock } from '../../util/shamrock';
+import { clover_to_shamrock } from '../../util/shamrock';
 import WalletStatus from '../wallet/WalletStatus';
 
 const groupsCols = [
@@ -54,7 +54,7 @@ const groupsCols = [
       if (state === PlotNFTStateEnum.SELF_POOLING) {
         return (
           <UnitFormat
-            value={mojo_to_shamrock(
+            value={clover_to_shamrock(
               BigInt(nft.wallet_balance.confirmed_wallet_balance ?? 0),
             )}
           />

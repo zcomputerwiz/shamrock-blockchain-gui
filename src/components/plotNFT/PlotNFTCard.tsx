@@ -39,7 +39,7 @@ import usePlotNFTDetails from '../../hooks/usePlotNFTDetails';
 import useOpenDialog from '../../hooks/useOpenDialog';
 import PoolJoin from '../pool/PoolJoin';
 import PoolAbsorbRewards from '../pool/PoolAbsorbRewards';
-import { mojo_to_shamrock } from '../../util/shamrock';
+import { clover_to_shamrock } from '../../util/shamrock';
 import { deleteUnconfirmedTransactions } from '../../modules/incoming';
 import PlotNFTGraph from './PlotNFTGraph';
 import PlotNFTGetPoolLoginLinkDialog from './PlotNFTGetPoolLoginLinkDialog';
@@ -150,7 +150,7 @@ export default function PlotNFTCard(props: Props) {
       label: <Trans>Unclaimed Rewards</Trans>,
       value: (
         <UnitFormat
-          value={mojo_to_shamrock(BigInt(balance))}
+          value={clover_to_shamrock(BigInt(balance))}
           state={State.SUCCESS}
         />
       ),

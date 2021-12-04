@@ -28,7 +28,7 @@ import {
   sha256,
 } from '../../util/utils';
 import { getBlockRecord, getBlock } from '../../modules/fullnodeMessages';
-import { mojo_to_shamrock } from '../../util/shamrock';
+import { clover_to_shamrock } from '../../util/shamrock';
 import {
   calculatePoolReward,
   calculateBaseFarmerReward,
@@ -172,13 +172,13 @@ export default function Block() {
       ? blockRecord.weight - prevBlockRecord.weight
       : blockRecord?.weight ?? 0;
 
-  const poolReward = mojo_to_shamrock(calculatePoolReward(blockRecord.height));
-  const baseFarmerReward = mojo_to_shamrock(
+  const poolReward = clover_to_shamrock(calculatePoolReward(blockRecord.height));
+  const baseFarmerReward = clover_to_shamrock(
     calculateBaseFarmerReward(blockRecord.height),
   );
 
   const shamrockFees = blockRecord.fees
-    ? mojo_to_shamrock(BigInt(blockRecord.fees))
+    ? clover_to_shamrock(BigInt(blockRecord.fees))
     : '';
 
   const rows = [

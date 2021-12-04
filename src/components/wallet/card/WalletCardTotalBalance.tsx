@@ -5,7 +5,7 @@ import WalletGraph from '../WalletGraph';
 import FarmCard from '../../farm/card/FarmCard';
 import useWallet from '../../../hooks/useWallet';
 import useCurrencyCode from '../../../hooks/useCurrencyCode';
-import { mojo_to_shamrock_string } from '../../../util/shamrock';
+import { clover_to_shamrock_string } from '../../../util/shamrock';
 
 const StyledGraphContainer = styled.div`
   margin-left: -1rem;
@@ -39,7 +39,7 @@ export default function WalletCardTotalBalance(props: Props) {
       }
       value={
         <>
-          {mojo_to_shamrock_string(value)} {currencyCode}
+          {clover_to_shamrock_string(value)} {currencyCode}
         </>
       }
       description={

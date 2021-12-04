@@ -21,7 +21,7 @@ import usePlotNFTs from '../../hooks/usePlotNFTs';
 import { pwAbsorbRewards } from '../../modules/plotNFT';
 import { SubmitData } from './select/PlotNFTSelectPool';
 import PlotNFTName from './PlotNFTName';
-import { mojo_to_shamrock, shamrock_to_mojo } from '../../util/shamrock';
+import { clover_to_shamrock, shamrock_to_clover } from '../../util/shamrock';
 import useStandardWallet from '../../hooks/useStandardWallet';
 
 type FormData = {
@@ -64,13 +64,13 @@ export default function PlotNFTAbsorbRewards(props: Props) {
 
       const { fee } = data;
 
-      const feeMojos = shamrock_to_mojo(fee);
+      const feeclovers = shamrock_to_clover(fee);
 
       if (walletId === undefined || !address) {
         return;
       }
 
-      await dispatch(pwAbsorbRewards(walletId, feeMojos));
+      await dispatch(pwAbsorbRewards(walletId, feeclovers));
 
       if (history.length) {
         history.goBack();
@@ -137,7 +137,7 @@ export default function PlotNFTAbsorbRewards(props: Props) {
               <Trans>
                 You will recieve{' '}
                 <UnitFormat
-                  value={mojo_to_shamrock(BigInt(balance))}
+                  value={clover_to_shamrock(BigInt(balance))}
                   display="inline"
                   state={State.SUCCESS}
                 />{' '}

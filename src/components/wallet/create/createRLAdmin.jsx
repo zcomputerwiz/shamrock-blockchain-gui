@@ -20,7 +20,7 @@ import {
 } from '../../../modules/createWallet';
 import { useStyles } from './WalletCreate';
 import { create_rl_admin_action } from '../../../modules/message';
-import { shamrock_to_mojo } from '../../../util/shamrock';
+import { shamrock_to_clover } from '../../../util/shamrock';
 import { openDialog } from '../../../modules/dialog';
 
 export const customStyles = makeStyles((theme) => ({
@@ -156,12 +156,12 @@ export const CreateRLAdminWallet = () => {
     dispatch(createState(true, true));
     const interval = interval_input.value;
     const interval_value = Number.parseInt(Number(interval));
-    const shamrockper = shamrock_to_mojo(shamrockper_input.value);
+    const shamrockper = shamrock_to_clover(shamrockper_input.value);
     const shamrockper_value = Number.parseInt(Number(shamrockper));
     const userpubkey = userpubkey_input.value;
-    const amount = shamrock_to_mojo(amount_input.value);
+    const amount = shamrock_to_clover(amount_input.value);
     const amount_value = Number.parseInt(Number(amount));
-    // var fee = shamrock_to_mojo(fee_input.value);
+    // var fee = shamrock_to_clover(fee_input.value);
     // TODO(lipa): send fee to server
     // const fee_value = parseInt(Number(fee));
     dispatch(

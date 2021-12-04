@@ -3094,8 +3094,8 @@ msgid "{currencyCode} User Transaction Fees"
 msgstr "{currencyCode} Transaktionsavgifter för användare"
 
 #: src/components/core/components/Amount/Amount.tsx:82
-msgid "{mojo, plural, one {mojo} other {mojos}}"
-msgstr "{mojo, plural, one {mojo} other {mojo}}"
+msgid "{clover, plural, one {clover} other {clovers}}"
+msgstr "{clover, plural, one {clover} other {clover}}"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:122
 msgid "{warning}"

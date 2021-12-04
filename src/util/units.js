@@ -1,12 +1,12 @@
 const units = {
   shamrock: 1,
-  mojo: 1 / 1e12,
+  clover: 1 / 1e12,
   colouredcoin: 1 / 1e9,
 };
 
 const aliases = {
   shamrock: ['ch', 'shamrock', 'shamrock'],
-  mojo: ['mj', 'mojo'],
+  clover: ['mj', 'clover'],
   colouredcoin: ['cc', 'colouredcoin'],
 };
 
@@ -15,7 +15,7 @@ const display = {
     format: '{amount} CH',
     fractionDigits: 12,
   },
-  mojo: {
+  clover: {
     format: '{amount} MJ',
     fractionDigits: 0,
   },
