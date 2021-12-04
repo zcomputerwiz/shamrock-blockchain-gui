@@ -9,7 +9,7 @@ const fs = require('fs');
 const PY_MAC_DIST_FOLDER = '../../../app.asar.unpacked/daemon';
 const PY_WIN_DIST_FOLDER = '../../../app.asar.unpacked/daemon';
 const PY_DIST_FILE = 'daemon';
-const PY_FOLDER = '../replaceme/daemon';
+const PY_FOLDER = '../shamrock/daemon';
 const PY_MODULE = 'server'; // without .py suffix
 
 let pyProc = null;
@@ -45,10 +45,10 @@ const getExecutablePath = (dist_file) => {
   return path.join(__dirname, PY_MAC_DIST_FOLDER, dist_file);
 };
 
-const getReplacemeVersion = () => {
+const getShamrockVersion = () => {
   let version = null;
-  const exePath = getExecutablePath('replaceme');
-  // first see if we can get a replaceme exe in a standard location relative to where we are
+  const exePath = getExecutablePath('shamrock');
+  // first see if we can get a shamrock exe in a standard location relative to where we are
   try {
     version = child_process
       .execFileSync(exePath, ['version'], {
@@ -56,7 +56,7 @@ const getReplacemeVersion = () => {
       })
       .trim();
   } catch (e1) {
-    // that didn't work, let's try as if we're in the venv or replaceme is on the path
+    // that didn't work, let's try as if we're in the venv or shamrock is on the path
     try {
       version = child_process
         .execFileSync(path.basename(exePath), ['version'], {
@@ -71,7 +71,7 @@ const getReplacemeVersion = () => {
   return version;
 };
 
-const startReplacemeDaemon = () => {
+const startShamrockDaemon = () => {
   let script = getScriptPath(PY_DIST_FILE);
   let processOptions = {};
   //processOptions.detached = true;
@@ -138,7 +138,7 @@ const startReplacemeDaemon = () => {
 };
 
 module.exports = {
-  startReplacemeDaemon,
-  getReplacemeVersion,
+  startShamrockDaemon,
+  getShamrockVersion,
   guessPackaged,
 };

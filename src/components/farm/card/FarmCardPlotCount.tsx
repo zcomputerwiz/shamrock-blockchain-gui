@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { FormatLargeNumber } from '@replaceme/core';
+import { FormatLargeNumber } from '@shamrock/core';
 import FarmCard from './FarmCard';
 import usePlots from '../../../hooks/usePlots';
 

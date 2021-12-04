@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Box, BoxProps } from '@material-ui/core';
-import { replaceme } from '@replaceme/icons';
+import { shamrock } from '@shamrock/icons';
 
-const StyledReplaceme = styled(replaceme)`
+const StyledShamrock = styled(shamrock)`
   max-width: 100%;
   width: auto;
   height: auto;
@@ -12,7 +12,7 @@ const StyledReplaceme = styled(replaceme)`
 export default function Logo(props: BoxProps) {
   return (
     <Box {...props}>
-      <StyledReplaceme />
+      <StyledShamrock />
     </Box>
   );
 }

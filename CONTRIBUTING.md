@@ -1,15 +1,15 @@
 # Introduction
 
-Welcome to the replaceme-blockchain project!
-We are happy that you are taking a look at the code for replaceme, a proof of space and time cryptocurrency.
+Welcome to the shamrock-blockchain project!
+We are happy that you are taking a look at the code for shamrock, a proof of space and time cryptocurrency.
 
 A lot of fascinating new cryptography and blockchain concepts are used and implemented here.
-This repo includes the code for the replaceme GUI in electron/react and TypeScript.
+This repo includes the code for the shamrock GUI in electron/react and TypeScript.
 
-It is an input to the [replaceme-blockchain](https://github.com/Replaceme-Network/replaceme-blockchain) repository which also includes a verifiable delay function implementation that it imports from the [replacemevdf repo](https://github.com/Replaceme-Network/replacemevdf) (in c/c++), and a proof of space implementation that it imports from the [replacemepos repo](https://github.com/Replaceme-Network/replacemepos). BLS signatures are imported from the [bls-signatures repo](https://github.com/Replaceme-Network/bls-signatures) as blspy. There is an additional dependency on the [replacemebip158 repo](https://github.com/Replaceme-Network/replacemebip158).
-For major platforms, binary and source wheels are shipped to PyPI from each dependent repo and then replaceme-blockchain can pip install those from PyPI or they can be prepackaged as is done for the Windows and MacOS installer. On unsupported platforms, pip will fall back to the source distributions to be compiled locally.
+It is an input to the [shamrock-blockchain](https://github.com/Shamrock-Network/shamrock-blockchain) repository which also includes a verifiable delay function implementation that it imports from the [shamrockvdf repo](https://github.com/Shamrock-Network/shamrockvdf) (in c/c++), and a proof of space implementation that it imports from the [shamrockpos repo](https://github.com/Shamrock-Network/shamrockpos). BLS signatures are imported from the [bls-signatures repo](https://github.com/Shamrock-Network/bls-signatures) as blspy. There is an additional dependency on the [shamrockbip158 repo](https://github.com/Shamrock-Network/shamrockbip158).
+For major platforms, binary and source wheels are shipped to PyPI from each dependent repo and then shamrock-blockchain can pip install those from PyPI or they can be prepackaged as is done for the Windows and MacOS installer. On unsupported platforms, pip will fall back to the source distributions to be compiled locally.
 
-If you want to learn more about this project, read the [wiki](https://github.com/Replaceme-Network/replaceme-blockchain/wiki), or check out the [green paper](https://www.replaceme.net/assets/replacemeGreenPaper.pdf).
+If you want to learn more about this project, read the [wiki](https://github.com/Shamrock-Network/shamrock-blockchain/wiki), or check out the [green paper](https://www.shamrock.net/assets/shamrockGreenPaper.pdf).
 
 ## Contributions
 
@@ -19,7 +19,7 @@ You can visit our [Trello project board](https://trello.com/b/ZuNx7sET) to get a
 Generally things to the left are in progress or done. Some things go through "Coming up soon" but some will come directly out of other columns.
 Usually the things closer to the top of each column are the ones that will be worked on soonest.
 If you are interested in cryptography, math, or just like hacking in python, there are many interesting problems to work on.
-Contact any of the team members on [Keybase](https://keybase.io/team/replaceme_network.public), which we use as the main communication method and you can comment on any Trello card.
+Contact any of the team members on [Keybase](https://keybase.io/team/shamrock_network.public), which we use as the main communication method and you can comment on any Trello card.
 
 ## Run tests and linting
 

@@ -8,7 +8,7 @@ import {
   Flex,
   Checkbox,
   TooltipIcon,
-} from '@replaceme/core';
+} from '@shamrock/core';
 import {
   Grid,
   FormControl,

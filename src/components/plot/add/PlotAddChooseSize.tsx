@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Trans } from '@lingui/macro';
 import { useFormContext } from 'react-hook-form';
-import { CardStep, ConfirmDialog, Link, Select, StateColor } from '@replaceme/core';
+import { CardStep, ConfirmDialog, Link, Select, StateColor } from '@shamrock/core';
 import {
   Grid,
   FormControl,
@@ -80,7 +80,7 @@ export default function PlotAddChooseSize(props: Props) {
           }
           <Link
             target="_blank"
-            href="https://github.com/Replaceme-Network/replaceme-blockchain/wiki/k-sizes"
+            href="https://github.com/Shamrock-Network/shamrock-blockchain/wiki/k-sizes"
           >
             Learn more
           </Link>

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
-import icon from '../../assets/img/replaceme_circle.svg';
+import icon from '../../assets/img/shamrock_circle.svg';
 
 const GlobalStyle = createGlobalStyle`
   body,
@@ -70,7 +70,7 @@ const Spacer = styled.div`
   margin-bottom: 1rem;
 `;
 
-const url = 'https://replaceme.net';
+const url = 'https://shamrock.net';
 
 type Props = {
   version: string;
@@ -114,7 +114,7 @@ export default function About(props: Props) {
         </StyledLink>
         <StyledSubTitle>{description}</StyledSubTitle>
         <Spacer />
-        <div className="copyright">Copyright (c) 2021 Replaceme Network</div>
+        <div className="copyright">Copyright (c) 2021 Shamrock Network</div>
         <Spacer />
         <VersionsTable>
           {versions?.electron && (
@@ -144,7 +144,7 @@ export default function About(props: Props) {
         </VersionsTable>
 
         <BugReport
-          href="https://github.com/Replaceme-Network/replaceme-blockchain/issues"
+          href="https://github.com/Shamrock-Network/shamrock-blockchain/issues"
           target="_blank"
         >
           Report an issue

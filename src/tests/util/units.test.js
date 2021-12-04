@@ -2,8 +2,8 @@ const units = require('../../util/units');
 
 describe('units', () => {
   describe('#getUnit', () => {
-    it('gets unit of replaceme', () => {
-      const result = units.getUnit('replaceme');
+    it('gets unit of shamrock', () => {
+      const result = units.getUnit('shamrock');
 
       expect(result).toBe(1);
     });
@@ -18,11 +18,11 @@ describe('units', () => {
       expect(result).toBe(1e-9);
     });
     it('supports uppercase characters', () => {
-      const result = units.getUnit('replaceme');
+      const result = units.getUnit('shamrock');
 
       expect(result).toBe(1);
     });
-    it('gets unit of replaceme using alias', () => {
+    it('gets unit of shamrock using alias', () => {
       const result = units.getUnit('ch');
 
       expect(result).toBe(1);
@@ -46,8 +46,8 @@ describe('units', () => {
     });
   });
   describe('#getDisplay', () => {
-    it('gets display of replaceme', () => {
-      const result = units.getDisplay('replaceme');
+    it('gets display of shamrock', () => {
+      const result = units.getDisplay('shamrock');
 
       expect(result).toEqual({
         format: '{amount} CH',
@@ -87,13 +87,13 @@ describe('units', () => {
       expect(result).toEqual(1);
     });
     it('modifies an existing unit', () => {
-      units.setUnit('replaceme', 9);
+      units.setUnit('shamrock', 9);
 
-      const result = units.getUnit('replaceme');
+      const result = units.getUnit('shamrock');
 
       expect(result).toEqual(9);
 
-      units.setUnit('replaceme', 1);
+      units.setUnit('shamrock', 1);
     });
   });
   describe('#setDisplay', () => {
@@ -111,15 +111,15 @@ describe('units', () => {
       });
     });
     it('updates an existing display', () => {
-      units.setDisplay('replaceme', {
-        format: '{amount} TXCH',
+      units.setDisplay('shamrock', {
+        format: '{amount} TSRN',
         fractionDigits: 0,
       });
 
-      const result = units.getDisplay('replaceme');
+      const result = units.getDisplay('shamrock');
 
       expect(result).toEqual({
-        format: '{amount} TXCH',
+        format: '{amount} TSRN',
         fractionDigits: 0,
       });
     });

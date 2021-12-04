@@ -12,7 +12,7 @@ const convert = (amount, from, to) => {
   return Number.parseFloat(amountInFromUnit.div(units.getUnit(to)));
 };
 
-class replaceme {
+class shamrock {
   constructor(value, unit) {
     this._value = value;
     this._unit = unit;
@@ -73,42 +73,42 @@ class replaceme {
   }
 }
 
-export const replaceme_formatter = (value, unit) => new replaceme(value, unit);
+export const shamrock_formatter = (value, unit) => new shamrock(value, unit);
 
-replaceme_formatter.convert = convert;
-replaceme_formatter.setDisplay = units.setDisplay;
-replaceme_formatter.setUnit = units.setUnit;
-replaceme_formatter.getUnit = units.getUnit;
-replaceme_formatter.setFiat = (currency, rate, display = null) => {
+shamrock_formatter.convert = convert;
+shamrock_formatter.setDisplay = units.setDisplay;
+shamrock_formatter.setUnit = units.setUnit;
+shamrock_formatter.getUnit = units.getUnit;
+shamrock_formatter.setFiat = (currency, rate, display = null) => {
   units.setUnit(currency, 1 / rate, display);
 };
 
-export const mojo_to_replaceme = (mojo) => {
-  return replaceme_formatter(Number.parseInt(mojo), 'mojo').to('replaceme').value();
+export const mojo_to_shamrock = (mojo) => {
+  return shamrock_formatter(Number.parseInt(mojo), 'mojo').to('shamrock').value();
 };
 
-export const replaceme_to_mojo = (replaceme) => {
-  return replaceme_formatter(Number.parseFloat(Number(replaceme)), 'replaceme')
+export const shamrock_to_mojo = (shamrock) => {
+  return shamrock_formatter(Number.parseFloat(Number(shamrock)), 'shamrock')
     .to('mojo')
     .value();
 };
 
-export const mojo_to_replaceme_string = (mojo) => {
-  return replaceme_formatter(Number(mojo), 'mojo').to('replaceme').toString();
+export const mojo_to_shamrock_string = (mojo) => {
+  return shamrock_formatter(Number(mojo), 'mojo').to('shamrock').toString();
 };
 
 export const mojo_to_colouredcoin = (mojo) => {
-  return replaceme_formatter(Number.parseInt(mojo), 'mojo')
+  return shamrock_formatter(Number.parseInt(mojo), 'mojo')
     .to('colouredcoin')
     .value();
 };
 
 export const colouredcoin_to_mojo = (colouredcoin) => {
-  return replaceme_formatter(Number.parseFloat(Number(colouredcoin)), 'colouredcoin')
+  return shamrock_formatter(Number.parseFloat(Number(colouredcoin)), 'colouredcoin')
     .to('mojo')
     .value();
 };
 
 export const mojo_to_colouredcoin_string = (mojo) => {
-  return replaceme_formatter(Number(mojo), 'mojo').to('colouredcoin').toString();
+  return shamrock_formatter(Number(mojo), 'mojo').to('colouredcoin').toString();
 };

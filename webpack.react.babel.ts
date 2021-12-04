@@ -80,8 +80,8 @@ export default {
       'node_modules',
     ],
     alias: {
-      "@replaceme/core": `${__dirname}/src/components/core`,
-      "@replaceme/icons": `${__dirname}/src/components/icons`,
+      "@shamrock/core": `${__dirname}/src/components/core`,
+      "@shamrock/icons": `${__dirname}/src/components/icons`,
       crypto: 'crypto-browserify',
       stream: 'stream-browserify',
     },

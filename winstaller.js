@@ -14,16 +14,16 @@ function getInstallerConfig () {
   const outPath = path.join(rootPath, 'release-builds')
 
   return Promise.resolve({
-    appDirectory: path.join(rootPath, 'replaceme-win32-x64'),
-    authors: 'Replaceme Network',
-    version: process.env.REPLACEME_INSTALLER_VERSION,
+    appDirectory: path.join(rootPath, 'shamrock-win32-x64'),
+    authors: 'Shamrock Network',
+    version: process.env.SHAMROCK_INSTALLER_VERSION,
     noMsi: true,
-    iconUrl: 'https://raw.githubusercontent.com/Replaceme-Network/replaceme-blockchain/master/electron-react/src/assets/img/replaceme.ico',
+    iconUrl: 'https://raw.githubusercontent.com/Shamrock-Network/shamrock-blockchain/master/electron-react/src/assets/img/shamrock.ico',
     outputDirectory: path.join(outPath, 'windows-installer'),
     certificateFile: 'win_code_sign_cert.p12',
     certificatePassword: process.env.WIN_CODE_SIGN_PASS,
-    exe: 'replaceme.exe',
-    setupExe: 'ReplacemeSetup-' + process.env.REPLACEME_INSTALLER_VERSION + '.exe',
-    setupIcon: path.join(rootPath, 'src', 'assets', 'img', 'replaceme.ico')
+    exe: 'shamrock.exe',
+    setupExe: 'ShamrockSetup-' + process.env.SHAMROCK_INSTALLER_VERSION + '.exe',
+    setupIcon: path.join(rootPath, 'src', 'assets', 'img', 'shamrock.ico')
   })
 }

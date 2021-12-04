@@ -7,7 +7,7 @@ import {
   AlertDialog,
   Flex,
   Card,
-} from '@replaceme/core';
+} from '@shamrock/core';
 import {
   Grid,
   Typography,

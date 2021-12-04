@@ -1,17 +1,17 @@
 const units = {
-  replaceme: 1,
+  shamrock: 1,
   mojo: 1 / 1e12,
   colouredcoin: 1 / 1e9,
 };
 
 const aliases = {
-  replaceme: ['ch', 'replaceme', 'replaceme'],
+  shamrock: ['ch', 'shamrock', 'shamrock'],
   mojo: ['mj', 'mojo'],
   colouredcoin: ['cc', 'colouredcoin'],
 };
 
 const display = {
-  replaceme: {
+  shamrock: {
     format: '{amount} CH',
     fractionDigits: 12,
   },

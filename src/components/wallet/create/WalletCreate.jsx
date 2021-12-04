@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Flex } from '@replaceme/core';
+import { Flex } from '@shamrock/core';
 import {
   Typography,
   Grid,

@@ -9,7 +9,7 @@ import {
 } from '@material-ui/core';
 import { useWatch, useFormContext } from 'react-hook-form';
 import TextField, { TextFieldProps } from '../TextField';
-import { replaceme_to_mojo } from '../../../../util/replaceme';
+import { shamrock_to_mojo } from '../../../../util/shamrock';
 import useCurrencyCode from '../../../../hooks/useCurrencyCode';
 import FormatLargeNumber from '../FormatLargeNumber';
 import Flex from '../Flex';
@@ -54,7 +54,7 @@ export default function Amount(props: AmountProps) {
     name,
   });
 
-  const mojo = replaceme_to_mojo(value);
+  const mojo = shamrock_to_mojo(value);
 
   return (
     <FormControl variant={variant} fullWidth={fullWidth}>

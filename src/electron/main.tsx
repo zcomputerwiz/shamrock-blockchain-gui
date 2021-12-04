@@ -11,8 +11,8 @@ import '../config/env';
 import handleSquirrelEvent from './handleSquirrelEvent';
 import config from '../config/config';
 import dev_config from '../dev_config';
-import replacemeEnvironment from '../util/replacemeEnvironment';
-import replacemeConfig from '../util/config';
+import shamrockEnvironment from '../util/shamrockEnvironment';
+import shamrockConfig from '../util/config';
 import { i18n } from '../config/locales';
 import About from '../components/about/About';
 import packageJson from '../../package.json';
@@ -93,7 +93,7 @@ if (!handleSquirrelEvent()) {
 
   const ensureCorrectEnvironment = () => {
     // check that the app is either packaged or running in the python venv
-    if (!replacemeEnvironment.guessPackaged() && !('VIRTUAL_ENV' in process.env)) {
+    if (!shamrockEnvironment.guessPackaged() && !('VIRTUAL_ENV' in process.env)) {
       console.log('App must be installed or in venv');
       app.quit();
       return false;
@@ -107,7 +107,7 @@ if (!handleSquirrelEvent()) {
   // if any of these checks return false, don't do any other initialization since the app is quitting
   if (ensureSingleInstance() && ensureCorrectEnvironment()) {
     // this needs to happen early in startup so all processes share the same global config
-    replacemeConfig.loadConfig('mainnet');
+    shamrockConfig.loadConfig('mainnet');
     global.sharedObj = { local_test };
 
     const exitPyProc = (e) => {};
@@ -168,7 +168,7 @@ if (!handleSquirrelEvent()) {
       });
 
       // don't show remote daeomn detials in the title bar
-      if (!replacemeConfig.manageDaemonLifetime()) {
+      if (!shamrockConfig.manageDaemonLifetime()) {
         mainWindow.webContents.on('did-finish-load', () => {
           mainWindow.setTitle(`${app.getName()} [${global.daemon_rpc_ws}]`);
         });
@@ -179,7 +179,7 @@ if (!handleSquirrelEvent()) {
       // }
       mainWindow.on('close', (e) => {
         // if the daemon isn't local we aren't going to try to start/stop it
-        if (decidedToClose || !replacemeConfig.manageDaemonLifetime()) {
+        if (decidedToClose || !shamrockConfig.manageDaemonLifetime()) {
           return;
         }
         e.preventDefault();
@@ -231,8 +231,8 @@ if (!handleSquirrelEvent()) {
       createWindow();
       app.applicationMenu = createMenu();
       // if the daemon isn't local we aren't going to try to start/stop it
-      if (replacemeConfig.manageDaemonLifetime()) {
-        replacemeEnvironment.startReplacemeDaemon();
+      if (shamrockConfig.manageDaemonLifetime()) {
+        shamrockEnvironment.startShamrockDaemon();
       }
     };
 
@@ -364,10 +364,10 @@ if (!handleSquirrelEvent()) {
         role: 'help',
         submenu: [
           {
-            label: i18n._(/* i18n */ { id: 'Replaceme Blockchain Wiki' }),
+            label: i18n._(/* i18n */ { id: 'Shamrock Blockchain Wiki' }),
             click: () => {
               openExternal(
-                'https://github.com/Replaceme-Network/replaceme-blockchain/wiki',
+                'https://github.com/Shamrock-Network/shamrock-blockchain/wiki',
               );
             },
           },
@@ -375,7 +375,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Frequently Asked Questions' }),
             click: () => {
               openExternal(
-                'https://github.com/Replaceme-Network/replaceme-blockchain/wiki/FAQ',
+                'https://github.com/Shamrock-Network/shamrock-blockchain/wiki/FAQ',
               );
             },
           },
@@ -383,7 +383,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Release Notes' }),
             click: () => {
               openExternal(
-                'https://github.com/Replaceme-Network/replaceme-blockchain/releases',
+                'https://github.com/Shamrock-Network/shamrock-blockchain/releases',
               );
             },
           },
@@ -391,7 +391,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Contribute on GitHub' }),
             click: () => {
               openExternal(
-                'https://github.com/Replaceme-Network/replaceme-blockchain/blob/master/CONTRIBUTING.md',
+                'https://github.com/Shamrock-Network/shamrock-blockchain/blob/master/CONTRIBUTING.md',
               );
             },
           },
@@ -402,20 +402,20 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Report an Issue...' }),
             click: () => {
               openExternal(
-                'https://github.com/Replaceme-Network/replaceme-blockchain/issues',
+                'https://github.com/Shamrock-Network/shamrock-blockchain/issues',
               );
             },
           },
           {
             label: i18n._(/* i18n */ { id: 'Chat on KeyBase' }),
             click: () => {
-              openExternal('https://keybase.io/team/replaceme_network.public');
+              openExternal('https://keybase.io/team/shamrock_network.public');
             },
           },
           {
             label: i18n._(/* i18n */ { id: 'Follow on Twitter' }),
             click: () => {
-              openExternal('https://twitter.com/replaceme_project');
+              openExternal('https://twitter.com/shamrock_project');
             },
           },
         ],
@@ -423,12 +423,12 @@ if (!handleSquirrelEvent()) {
     ];
 
     if (process.platform === 'darwin') {
-      // Replaceme Blockchain menu (Mac)
+      // Shamrock Blockchain menu (Mac)
       template.unshift({
-        label: i18n._(/* i18n */ { id: 'replaceme' }),
+        label: i18n._(/* i18n */ { id: 'shamrock' }),
         submenu: [
           {
-            label: i18n._(/* i18n */ { id: 'About Replaceme Blockchain' }),
+            label: i18n._(/* i18n */ { id: 'About Shamrock Blockchain' }),
             click: () => {
               openAbout();
             },
@@ -515,7 +515,7 @@ if (!handleSquirrelEvent()) {
           type: 'separator',
         },
         {
-          label: i18n._(/* i18n */ { id: 'About Replaceme Blockchain' }),
+          label: i18n._(/* i18n */ { id: 'About Shamrock Blockchain' }),
           click() {
             openAbout();
           },

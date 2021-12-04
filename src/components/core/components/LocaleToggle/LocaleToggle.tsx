@@ -43,7 +43,7 @@ export default function LocaleToggle(props: Props) {
     handleClose();
 
     openExternal(
-      'https://github.com/Replaceme-Network/replaceme-blockchain-gui/tree/main/src/locales/README.md',
+      'https://github.com/Shamrock-Network/shamrock-blockchain-gui/tree/main/src/locales/README.md',
     );
   }
 

@@ -1,8 +1,8 @@
-export const service_wallet = 'replaceme_wallet';
-export const service_full_node = 'replaceme_full_node';
-export const service_farmer = 'replaceme_farmer';
-export const service_harvester = 'replaceme_harvester';
-export const service_simulator = 'replaceme_full_node_simulator';
+export const service_wallet = 'shamrock_wallet';
+export const service_full_node = 'shamrock_full_node';
+export const service_farmer = 'shamrock_farmer';
+export const service_harvester = 'shamrock_harvester';
+export const service_simulator = 'shamrock_full_node_simulator';
 export const service_daemon = 'daemon';
 export const service_plotter = 'chia_plotter';
 

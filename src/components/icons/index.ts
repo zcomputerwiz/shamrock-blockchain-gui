@@ -1,4 +1,4 @@
-export { default as replaceme } from './replaceme';
+export { default as shamrock } from './shamrock';
 export { default as Farm } from './Farm';
 export { default as Home } from './Home';
 export { default as Keys } from './Keys';
